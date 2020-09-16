@@ -14,9 +14,13 @@ var name
     }
   }
 
-function currentLine(katzDeli) { 
+function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
-      return `The line is currently: x people long`
+      return `The line is currently: ${
+        for (let i = 0; i < katzDeli.length; i++) {
+          return `${katzDeli.indexOf(i)}. ${katzDeli[i]}, `
+        }
+      }
   } else {
     return 'The line is currently empty.'
   }
