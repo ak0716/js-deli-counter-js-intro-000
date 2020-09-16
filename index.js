@@ -14,12 +14,13 @@ var name
     }
   }
 
-function currentLine(katzDeli) {
-  function katzDeliList(katzDeli) {
+function katzDeliList(katzDeli) {
     for (let i = 0; i < katzDeli.length; i++) {
       return `${katzDeli.indexOf(i)}.  ${katzDeli[i]}, `
     }
   }
+
+function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
       return `The line is currently: ${katzDeliList()}`
   } else {
