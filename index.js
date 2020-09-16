@@ -16,9 +16,7 @@ var name
 
 function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
-      return `The line is currently: ${
-        for (let i = 0; i < katzDeli.length; i++) {
-          return `${katzDeli.indexOf(i)}. ${katzDeli[i]}, `
+      return `The line is currently: ${katzDeli.indexOf(0)}. ${katzDeli[0]}, `
         }
       }
   } else {
