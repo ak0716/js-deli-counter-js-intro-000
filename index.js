@@ -21,7 +21,7 @@ function katzDeliList(katzDeli) {
   }
 
 function currentLine(katzDeli) {
-  let katzDeliList = katzDeliList()
+  let katzDeliList = katzDeliList(katzDeli)
   if (katzDeli.length > 0) {
       return `The line is currently: ${katzDeliList}`
   } else {
