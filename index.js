@@ -16,7 +16,7 @@ var name
 
 function katzDeliList(katzDeli) {
     for (let i = 0; i < katzDeli.length; i++) {
-      return `${katzDeli.indexOf(i)}.  ${katzDeli[i]}, `
+      return `${katzDeli.indexOf(i+1)}.  ${katzDeli[i]}, `
     }
   }
 
