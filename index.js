@@ -22,7 +22,7 @@ function katzDeliList(katzDeli) {
 
 function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
-      return `The line is currently: ${katzDeliList()}`
+      return `The line is currently: ${katzDeliList(katzDeli)}`
   } else {
     return 'The line is currently empty.'
   }
