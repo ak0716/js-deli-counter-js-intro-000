@@ -14,15 +14,13 @@ var name
     }
   }
 
+let katzLine = []
 function currentLine(katzDeli) {
-  if (katzDeli.length > 0) {
-    function lineList(katzDeli) {
-      for (let i = 0; i < katzDeli.length; i++) {
-        return katzDeli.forEach(`${i + 1}: ${katzDeli[i]}`)
-      }
-    }
-    return `The line is currently: ${lineList()}`
+  for (let i = 0; i < katzDeli.length; i++) {
+    line.push(` ${katzDeli[i + 1]}: ${katzDeli[i]}`)
+  }
+  if (i > 0) {
+    return `The line is currently: ${line}`
   } else {
     return 'The line is currently empty.'
   }
-}
