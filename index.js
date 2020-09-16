@@ -17,7 +17,7 @@ var name
 let katzLine = []
 function currentLine(katzDeli) {
   for (let i = 0; i < katzDeli.length; i++) {
-    line.push(` ${katzDeli[i + 1]}: ${katzDeli[i]}`)
+    line.push(` [i + 1]. ${katzDeli[i]}`)
   }
   if (i > 0) {
     return `The line is currently: ${line}`
