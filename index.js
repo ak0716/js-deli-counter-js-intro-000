@@ -14,16 +14,10 @@ var name
     }
   }
 
-function katzDeliList(katzDeli) {
-    for (let i = 0; i < katzDeli.length; i++) {
-      return `${katzDeli.indexOf(i+1)}.  ${katzDeli[i]}, `
-    }
-  }
-
 function currentLine(katzDeli) {
   let katzDeliList = katzDeliList(katzDeli)
   if (katzDeli.length > 0) {
-      return `The line is currently: ${katzDeliList}`
+      return `The line is currently: x people long`
   } else {
     return 'The line is currently empty.'
   }
