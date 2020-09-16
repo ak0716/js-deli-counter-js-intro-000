@@ -14,11 +14,15 @@ var name
     }
   }
 
+function lineList(katzDeli) {
+  for (let i = 0; i < katzDeli.length; i++) {
+    return katzDeli.forEach(`${i + 1}: ${katzDeli[i]}`)
+  }
+}
+
 function currentLine(katzDeli) {
   if (katzDeli.length > 0) {
-      return `The line is currently: ${katzDeli.indexOf(0)}. ${katzDeli[0]}, `
-        }
-      }
+    return `The line is currently: ${lineList()}`
   } else {
     return 'The line is currently empty.'
   }
