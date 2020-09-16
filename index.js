@@ -14,8 +14,7 @@ var name
     }
   }
 
-function currentLine(katzDeli) {
-  let katzDeliList = katzDeliList(katzDeli)
+function currentLine(katzDeli) { 
   if (katzDeli.length > 0) {
       return `The line is currently: x people long`
   } else {
